@@ -1,6 +1,6 @@
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(_file_))))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 import sionna.phy as sn
 from config import *
 import keras

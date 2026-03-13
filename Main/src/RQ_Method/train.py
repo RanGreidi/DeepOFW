@@ -1,7 +1,7 @@
 import sys
 import pickle
 import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(_file_))))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 from src.RQ_Method.RQ_Model import RQ_MODEL
 from config import *
 import keras

@@ -4,7 +4,7 @@ from keras.layers import Dense, Layer, Conv1D, BatchNormalization, Dropout, GRU
 from keras import regularizers
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(_file_))))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 from utils.General_helpers import idft_matrix
 
 class RQ_creator_layer(Layer):

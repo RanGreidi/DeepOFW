@@ -619,7 +619,7 @@ class TDL_RandomDS(ChannelModel):
 if __name__ == "__main__":
     import sys
     import os
-    sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(_file_))))
+    sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
     from sionna.phy.channel import  TimeChannel
     import matplotlib.pyplot as plt
     import numpy as np

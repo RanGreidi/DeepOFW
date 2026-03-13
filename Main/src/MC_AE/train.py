@@ -2,7 +2,7 @@ from MC_AE_Model import MC_AE_MODEL
 import sys
 import pickle
 import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(_file_))))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 from config import *
 import keras
 import tensorflow as tf

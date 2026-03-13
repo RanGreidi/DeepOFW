@@ -1,7 +1,7 @@
 import sys
 import pickle
 import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(_file_))))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 from src.qQ_Method.qQ_Model import qQ_MODEL
 from config import *
 import keras
