@@ -1,6 +1,7 @@
 import sys
-sys.path.append('/work_space/project3/Main/src') 
-sys.path.append('/work_space/project3/Main') 
+import os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 import pickle
 import tensorflow as tf
 import sionna.phy as sn
