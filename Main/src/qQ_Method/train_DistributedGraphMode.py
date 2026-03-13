@@ -1,6 +1,7 @@
 import sys
 import pickle
-sys.path.append('/work_space/project3/Main/') 
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(_file_))))
 from src.qQ_Method.qQ_Model import qQ_MODEL
 from config import *
 import keras
@@ -24,7 +25,7 @@ LEARNING_RATE = 0.00001 #0.001 0.0001 0.00001
 BATCH_SIZE_PER_DEVICE = BATCH_SIZE * 700
 weights_file_name = 'weights-qQ_Method'
 load_pretrained = True
-pretrained_weights_file_name = 'weights-qQ_Method_best_gru1024_b450x2_len384_sigma8_cont_4'
+pretrained_weights_file_name = 'weights-qQ_Method'
 
 # Dummy Instantiation using Dist strategy
 with strategy.scope():

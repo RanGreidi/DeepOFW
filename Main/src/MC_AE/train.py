@@ -1,7 +1,8 @@
 from MC_AE_Model import MC_AE_MODEL
 import sys
 import pickle
-sys.path.append('/work_space/project3/Main/') 
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(_file_))))
 from config import *
 import keras
 import tensorflow as tf

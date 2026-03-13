@@ -1,7 +1,8 @@
 import tensorflow as tf
 import keras
 import sys
-sys.path.append('/work_space/project3/Main/') 
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(_file_))))
 from config import *
 from channel import channel_model
 import numpy as np

@@ -3,7 +3,8 @@ import numpy as np
 from keras.layers import Dense, Layer, Conv1D, BatchNormalization, Dropout, GlobalAveragePooling1D, MultiHeadAttention, LayerNormalization, GRU
 from keras import regularizers
 import sys
-sys.path.append('/work_space/project3/Main/') 
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(_file_))))
 from utils.General_helpers import idft_matrix
 
 class qQ_creator_layer(Layer):

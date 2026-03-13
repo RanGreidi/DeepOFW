@@ -1,5 +1,6 @@
 import sys
-sys.path.append('/work_space/project3/Main/') 
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(_file_))))
 import sionna.phy as sn
 from config import *
 import keras
